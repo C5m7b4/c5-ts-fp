@@ -12,3 +12,77 @@ here are the functions that I am covering so far
 
 - curry
 - compose
+- Box
+- trace
+
+## example usage
+
+to install
+
+```js
+npm install c5-ts-fp
+```
+
+or
+
+```js
+yarn add c5-ts-fp
+```
+
+### curry
+
+to use this function, we need to take a function that has an airity of more than on and condense it to consecutive functions:
+
+```js
+const add = (a, b) => a + b;
+
+const curriedAdd = curry(add);
+console.log(curriedAdd(5)(5));
+```
+
+### compose
+
+to use this function, we need some helper functions that we can compose
+
+```js
+const addOne = (x) => x.map((y) => y + 1);
+const addTwo = (x) => x.map((y) => y + 2);
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+const r = compose(addOne, addTwo);
+console.log(r(arr));
+```
+
+### Box
+
+to us this function, we need an array of data that we can dynamically filter:
+
+```js
+const items = Box(data)
+  .map((x) => x.filter((i) => i.dept === 1))
+  .map((x) => x.filter((i) => i.vendor === 1))
+  .map((x) => x.filter((i) => i.category === 1))
+  .map((x) => x.filter((i) => i.price > 2.0))
+  .map((x) => x.filter((i) => i.price < 3.0))
+  .fold((x) => x);
+
+console.log(items);
+```
+
+### trace
+
+this is a useful function if you need to add logging into your monad
+
+```js
+const items = Box(data)
+  .map((x) => x.filter((i) => i.dept === 1))
+  .map((x) => trace("after dept filter")(x))
+  .map((x) => x.filter((i) => i.vendor === 1))
+  .map((x) => x.filter((i) => i.category === 1))
+  .map((x) => x.filter((i) => i.price > 2.0))
+  .map((x) => x.filter((i) => i.price < 3.0))
+  .fold((x) => x);
+
+console.log(items);
+```
