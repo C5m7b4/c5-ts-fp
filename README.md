@@ -14,6 +14,9 @@ here are the functions that I am covering so far
 - compose
 - Box
 - trace
+- prop
+- append
+- Maybe
 
 ## example usage
 
@@ -86,3 +89,19 @@ const items = Box(data)
 
 console.log(items);
 ```
+
+### prop
+
+this function will extract a property out of an object
+
+```js
+const obj = {
+  id: 1,
+  name: 'mike'
+}
+
+console.log(prop('mike')(obj))
+```
+
+there is no need to curry this function because it is already a higher order function. it takes in a property name and returns a function that takes in an object and then returns the value of that property of that object. 
+
