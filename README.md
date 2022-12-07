@@ -106,3 +106,36 @@ console.log(prop('mike')(obj))
 
 there is no need to curry this function because it is already a higher order function. it takes in a property name and returns a function that takes in an object and then returns the value of that property of that object. 
 
+### Maybe example
+
+lets look at an example of how we can use maybe. Im gonna add some test data so we can try out the maybe. you can see an example of this in the example application attached:
+
+```js
+const maybeData = Maybe.just(data1)
+  .map((x) => x.filter((i) => i.dept === 32))
+  .map((x) => x.filter((i) => i.price > 2))
+  .map((x) => x.map((i) => ({ ...i, price: formatMoney(i.price) })))
+  .extract();
+
+console.log(maybeData);
+```
+
+even if the data passed in is null, the Maybe won't break.
+
+### Stack
+
+stack is a data structure that is LIFO (last in first out)
+these are the methods
+
+- push
+- pop
+- peek
+
+### Queue
+
+queue is a data struccture that is FIFO (first in first out)
+these are the methods
+
+- enqueue
+- dequeue
+- size
