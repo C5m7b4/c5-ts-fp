@@ -78,3 +78,11 @@ const maybeData1 = Maybe.just(null)
   .extract();
 
 console.log(maybeData1);
+
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
+import { linearSearch } from "../src";
+const found = linearSearch(arr1, 4);
+console.log("found", found);
+
+import { append } from "../src";
+console.log(append("second")("first-"));

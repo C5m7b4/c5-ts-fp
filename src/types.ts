@@ -10,3 +10,5 @@ export interface IQueue<T> {
   dequeue(): T | undefined;
   size(): number;
 }
+
+export type primitiveType = string | number | Object | Date | boolean;

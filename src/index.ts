@@ -5,3 +5,5 @@ export { trace, prop, append } from "./utils";
 export { Maybe } from "./Maybe";
 export { Stack } from "./Stack";
 export { Queue } from "./Queue";
+
+export * from "./Searches";
