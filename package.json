@@ -15,6 +15,10 @@
     "test:coverage": "jest --coverage",
     "view:coverage": "start coverage/lcov-report/index.html"
   },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/C5m7b4/c5-ts-fp"
+  },
   "keywords": [],
   "author": "C5m7b4",
   "license": "MIT",
