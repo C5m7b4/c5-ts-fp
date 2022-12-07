@@ -1,0 +1,45 @@
+{
+  "name": "c5-ts-fp",
+  "version": "1.0.0",
+  "description": "small Typescript functional library",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "test": "jest",
+    "lint": "eslint ./src/*.ts",
+    "test:coverage": "jest --coverage",
+    "view:coverage": "start coverage/lcov-report/index.html"
+  },
+  "keywords": [],
+  "author": "C5m7b4",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/jest": "^29.2.4",
+    "babel-jest": "^29.3.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.0",
+    "rollup": "^3.6.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1"
+  }
+}

@@ -1,0 +1,3 @@
+https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe
+
+https://dev.to/alexeagleson/understanding-the-modern-web-stack-linters-eslint-59pm
