@@ -4,12 +4,12 @@ import { data } from "./data";
 describe("linearSearch", () => {
   test("should find a value in an array of numbers", () => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const result = linearSearch(arr, 4);
+    const result = linearSearch<number>(arr, 4);
     expect(result).toBeTruthy();
   });
   test("should not find a value in an array of numbers", () => {
     const arr = [1, 2, 4, 5, 6, 7];
-    const result = linearSearch(arr, 3);
+    const result = linearSearch<number>(arr, 3);
     expect(result).toBeFalsy();
   });
   test("should find an object in an array of objects", () => {

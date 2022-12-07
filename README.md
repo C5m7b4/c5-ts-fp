@@ -21,6 +21,12 @@ here are the functions that I am covering so far
 - [Stack](#stack)
 - [Queue](#queue)
 - [Linear Search](#linear-search)
+- [Binary Search]
+
+coming soon
+
+- Task
+- Either
 
 ## example usage
 
@@ -158,5 +164,13 @@ these are the methods
 once again, we are going to use our test data. we can also run this linear search on any array of numbers, dates, string, or objects. the syntax would look like this:
 
 ```js
+const result = linearSearch(data, 2, "id");
+```
 
+### Binary Search
+
+this can only work on data that is already sorted, so if you are searching by an already sorted id, this is perfect. if you are searching by description but you data is sorted by id, you will need to sort this data before you try to use a binary search
+
+```js
+const result = binarySearch(data, 2, "id");
 ```
