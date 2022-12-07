@@ -11,13 +11,16 @@ this is my small functional library for typescript.
 
 here are the functions that I am covering so far
 
-- curry
-- compose
-- Box
-- trace
-- prop
-- append
-- Maybe
+- [curry](#curry)
+- [compose](#compose)
+- [Box](#box)
+- [trace](#trace)
+- [prop](#prop)
+- [append](#append)
+- [Maybe](#maybe)
+- [Stack](#stack)
+- [Queue](#queue)
+- [Linear Search](#linear-search)
 
 ## example usage
 
@@ -104,9 +107,19 @@ const obj = {
 console.log(prop('mike')(obj))
 ```
 
-there is no need to curry this function because it is already a higher order function. it takes in a property name and returns a function that takes in an object and then returns the value of that property of that object. 
+there is no need to curry this function because it is already a higher order function. it takes in a property name and returns a function that takes in an object and then returns the value of that property of that object.
 
-### Maybe example
+### append
+
+this simple function just appends one string to another
+
+```js
+console.log(append("second")("first-"));
+```
+
+there is no need to curry this function becuase it is also a higher order function
+
+### maybe
 
 lets look at an example of how we can use maybe. Im gonna add some test data so we can try out the maybe. you can see an example of this in the example application attached:
 
@@ -139,3 +152,11 @@ these are the methods
 - enqueue
 - dequeue
 - size
+
+### Linear Search
+
+once again, we are going to use our test data. we can also run this linear search on any array of numbers, dates, string, or objects. the syntax would look like this:
+
+```js
+
+```
