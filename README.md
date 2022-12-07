@@ -21,7 +21,7 @@ here are the functions that I am covering so far
 - [Stack](#stack)
 - [Queue](#queue)
 - [Linear Search](#linear-search)
-- [Binary Search]
+- [Binary Search](#binary-search)
 
 coming soon
 
