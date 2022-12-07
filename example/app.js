@@ -48,3 +48,33 @@ const items = Box(data)
   .fold((x) => x);
 
 console.log(items);
+
+import { data as data1 } from "./data";
+import { Maybe } from "../src";
+
+export const formatMoney = (x) => {
+  x = x.toString();
+  const pos = x.indexOf(".");
+  const left = x.substring(0, pos);
+  let right = x.substring(pos + 1);
+  if (right.length === 1) {
+    right = right + "0";
+  }
+  return `${left}.${right}`;
+};
+
+const maybeData = Maybe.just(data1)
+  .map((x) => x.filter((i) => i.dept === 32))
+  .map((x) => x.filter((i) => i.price > 2))
+  .map((x) => x.map((i) => ({ ...i, price: formatMoney(i.price) })))
+  .extract();
+
+console.log(maybeData);
+
+const maybeData1 = Maybe.just(null)
+  .map((x) => x.filter((i) => i.dept === 32))
+  .map((x) => x.filter((i) => i.price > 2))
+  .map((x) => x.map((i) => ({ ...i, price: formatMoney(i.price) })))
+  .extract();
+
+console.log(maybeData1);

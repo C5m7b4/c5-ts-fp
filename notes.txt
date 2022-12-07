@@ -1,3 +1,9 @@
 https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe
 
 https://dev.to/alexeagleson/understanding-the-modern-web-stack-linters-eslint-59pm
+
+https://dev.to/glebirovich/typescript-data-structures-stack-and-queue-hld
+
+https://www.codingame.com/playgrounds/6272/building-a-maybe-in-javascript
+
+
