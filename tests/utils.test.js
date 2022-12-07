@@ -1,4 +1,4 @@
-import { Box, trace } from "../src";
+import { Box, trace, prop, append } from "../src";
 import { data } from "./data";
 
 describe("trace", () => {
@@ -32,5 +32,21 @@ describe("trace", () => {
         vendor: 1,
       },
     ]);
+  });
+});
+
+describe("prop", () => {
+  test("should get a property from an object", () => {
+    const obj = {
+      id: 1,
+      name: "mike",
+    };
+    expect(prop("name")(obj)).toEqual("mike");
+  });
+});
+
+describe("append", () => {
+  test("should append two strings", () => {
+    expect(append("thing")("some")).toEqual("something");
   });
 });
