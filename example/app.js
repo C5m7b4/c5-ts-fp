@@ -29,3 +29,22 @@ const arr = [1, 2, 3, 4, 5, 6];
 
 const r = compose(addOne, addTwo);
 console.log(r(arr));
+
+import { Box, trace } from "../src";
+import { data } from "../tests/data";
+
+// const trace = (label) => (x) => {
+//   console.log(`label: ${label}: value: ${x.map((i) => JSON.stringify(i))}`);
+//   return x;
+// };
+
+const items = Box(data)
+  .map((x) => x.filter((i) => i.dept === 1))
+  .map((x) => trace("after dept filter")(x))
+  .map((x) => x.filter((i) => i.vendor === 1))
+  .map((x) => x.filter((i) => i.category === 1))
+  .map((x) => x.filter((i) => i.price > 2.0))
+  .map((x) => x.filter((i) => i.price < 3.0))
+  .fold((x) => x);
+
+console.log(items);

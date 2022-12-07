@@ -1,0 +1,38 @@
+export const data = [
+  {
+    id: 1,
+    upc: "1",
+    description: "coke",
+    price: 1.0,
+    dept: 1,
+    category: 1,
+    vendor: 1,
+  },
+  {
+    id: 2,
+    upc: "2",
+    description: "pepsi",
+    price: 2.45,
+    dept: 1,
+    category: 1,
+    vendor: 1,
+  },
+  {
+    id: 3,
+    upc: "3",
+    description: "mt dew",
+    price: 2.65,
+    dept: 1,
+    category: 1,
+    vendor: 1,
+  },
+  {
+    id: 4,
+    upc: "4",
+    description: "dr pepper",
+    price: 3.65,
+    dept: 1,
+    category: 1,
+    vendor: 1,
+  },
+];
