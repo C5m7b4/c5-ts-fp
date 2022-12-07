@@ -5,6 +5,7 @@
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/c5m7b4/c5-ts-fp?style=plastic)
 ![GitHub](https://img.shields.io/github/license/c5m7b4/c5-ts-fp?style=plastic)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/c5m7b4/c5-ts-fp?style=plastic)
+[![codecov](https://codecov.io/gh/C5m7b4/c5-ts-fp/branch/master/graph/badge.svg?token=eoy3bDqgts)](https://codecov.io/gh/C5m7b4/c5-ts-fp)
 
 this is my small functional library for typescript.
 
