@@ -8,3 +8,4 @@ export { Queue } from "./Queue";
 
 export * from "./Searches";
 export * from "./Sorters";
+export * from "./Structures";
