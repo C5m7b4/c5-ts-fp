@@ -9,4 +9,11 @@ const prop = (propName: any) => (obj: any) => obj[propName];
 
 const append = (appendee: string) => (appendix: string) => appendix + appendee;
 
-export { trace, prop, append };
+const swap = <T>(arr: T[], id: number): T[] => {
+  const tmp = arr[id];
+  arr[id] = arr[id + 1];
+  arr[id + 1] = tmp;
+  return arr;
+};
+
+export { trace, prop, append, swap };
