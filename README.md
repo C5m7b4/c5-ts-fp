@@ -22,6 +22,8 @@ here are the functions that I am covering so far
 - [Queue](#queue)
 - [Linear Search](#linear-search)
 - [Binary Search](#binary-search)
+- [Bubble Sort](#bubble-sort)
+- [swap](#swap)
 
 coming soon
 
@@ -174,3 +176,22 @@ this can only work on data that is already sorted, so if you are searching by an
 ```js
 const result = binarySearch(data, 2, "id");
 ```
+
+### Bubble Sort
+
+i figures since we talked about needing to sort this would be a good time to add this
+
+parameters
+
+- array to sort
+- ascending true or false. defaults to true
+- property of array to sort on
+- boolean flag for if its a date you are sorting by
+
+```js
+    const result = bubbleSort(dataWithDates, false, "expires", true);
+```
+
+### swap
+
+this function takes in an array and a position and swaps it with the next element in the array. used in Bubble Sort so far
