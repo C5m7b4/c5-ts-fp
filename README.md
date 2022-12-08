@@ -24,6 +24,7 @@ here are the functions that I am covering so far
 - [Binary Search](#binary-search)
 - [Bubble Sort](#bubble-sort)
 - [swap](#swap)
+- [RingBuffer](#ringbuffer)
 
 coming soon
 
@@ -195,3 +196,35 @@ parameters
 ### swap
 
 this function takes in an array and a position and swaps it with the next element in the array. used in Bubble Sort so far
+
+### RingBuffer
+
+this is like a javascript array, but you specify an initial size. If a value is then added to the ringbugger, it will rotate back around and add that value. so, basically, its an array that acts like a ring based on the specified size. I know that's a little confusing, so let's take a look at an example
+
+```js
+    const ring = new RingBuffer<number>(5);
+    ring.fromArray([12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]);
+    expect(ring).toEqual({
+      buffer: [21, 22, 23, 24, 25],
+      size: 5,
+    });
+```
+
+notice that we passed a lot of values into the ringbuffer, but only the last 5 will actually make the test pass.
+
+we can very easily adapt this to work with object arrays:
+
+```js
+
+type Client = {
+  id: number;
+  name: string;
+};
+
+    const ring = new RingBuffer<Client>(5);
+    ring.add({
+      id: 1,
+      name: "mike",
+    });
+    expect(ring).toEqual({ buffer: [{ id: 1, name: "mike" }], size: 5 });
+```
