@@ -86,3 +86,27 @@ console.log("found", found);
 
 import { append } from "../src";
 console.log(append("second")("first-"));
+
+export const dataWithDates = [
+  {
+    id: 1,
+    expires: "1/1/2021",
+  },
+  {
+    id: 2,
+    expires: "7/3/2021",
+  },
+  {
+    id: 3,
+    expires: "5/1/2022",
+  },
+  {
+    id: 4,
+    expires: "7/1/2022",
+  },
+];
+
+import { QuickSort } from "../src";
+
+// const sortedDates = QuickSort(dataWithDates, true, "expires", true);
+// console.log(sortedDates);

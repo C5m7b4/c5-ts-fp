@@ -1,4 +1,4 @@
-import { swap } from "../utils";
+import { swap } from "../Utils";
 
 export const bubbleSort = <T>(
   arr: T[],
