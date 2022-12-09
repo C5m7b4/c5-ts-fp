@@ -27,6 +27,8 @@ here are the functions that I am covering so far
 - [RingBuffer](#ringbuffer)
 - QuickSort
 - [isValid](#isvalid)
+- [date functions](#date-functions)
+- [format functions](#format-functions)
 
 coming soon
 
@@ -235,3 +237,65 @@ type Client = {
 
 this function will tell you if any number, string, object, or array is actually valid or not
 
+### date functions
+
+we have getDateDetails which will return and object with the month, day and year
+
+```js
+    const testDate = new Date(2022, 0, 1);
+    const { day, month, year } = getDateDetails(testDate);
+```
+
+we have daysInMonth which could be used when creating calendar objects
+
+```js
+    expect(daysInMonth(0, 2022)).toEqual(31);
+```
+
+we have isSameMonth
+
+```js
+    const testDate = new Date(2022, 2, 5);
+    const goodDate = new Date(2022, 2, 15);
+    const badDate = new Date(2022, 1, 5);
+    expect(isSameMonth(goodDate, testDate)).toBeTruthy();
+    expect(isSameMonth(badDate, testDate)).toBeFalsy();
+```
+
+we have isSameDay
+
+```js
+    const testDate = new Date(2022, 2, 5);
+    const goodDate = new Date(2022, 2, 5);
+    const badDate1 = new Date(2022, 2, 6);
+    const badDate2 = new Date(2021, 2, 5);
+    expect(isSameDay(goodDate, testDate)).toBeTruthy();
+    expect(isSameDay(badDate1, testDate)).toBeFalsy();
+    expect(isSameDay(badDate2, testDate)).toBeFalsy();
+```
+
+we have getDayOfDate
+
+```js
+    expect(getDayOfDate(new Date(2022, 2, 27))).toEqual("Sunday");
+```
+
+we have getMonthName
+
+```js
+    expect(getMonthName(new Date(2022, 0, 1))).toEqual("January");
+```
+
+### format functions
+
+we have formatMoney
+
+```js
+    expect(formatMoney("1.1")).toEqual("$1.10");
+```
+
+we have formatDate
+
+```js
+    expect(formatDate("1/1/2020 2:00 PM")).toEqual("1/1/2020");
+```
