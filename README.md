@@ -25,6 +25,8 @@ here are the functions that I am covering so far
 - [Bubble Sort](#bubble-sort)
 - [swap](#swap)
 - [RingBuffer](#ringbuffer)
+- QuickSort
+- [isValid](#isvalid)
 
 coming soon
 
@@ -228,3 +230,8 @@ type Client = {
     });
     expect(ring).toEqual({ buffer: [{ id: 1, name: "mike" }], size: 5 });
 ```
+
+### isValid
+
+this function will tell you if any number, string, object, or array is actually valid or not
+

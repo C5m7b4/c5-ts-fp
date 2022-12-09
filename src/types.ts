@@ -11,4 +11,6 @@ export interface IQueue<T> {
   size(): number;
 }
 
-export type primitiveType = string | number | Object | Date | boolean;
+export type primitiveType = string | number | Date | boolean;
+
+export type isValidType = number | string | Date | Object;

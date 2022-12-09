@@ -299,3 +299,99 @@ export const testFixDataDesc = [
     category: 3,
   },
 ];
+
+export const dataToPassQuickSortCoverage = [
+  {
+    name: "sally",
+  },
+  {
+    name: "betty",
+  },
+  {
+    name: "mike",
+  },
+  {
+    name: "tommy",
+  },
+  {
+    name: "kim",
+  },
+  {
+    name: "alyssa",
+  },
+  {
+    name: "kate",
+  },
+  {
+    name: "chris",
+  },
+  {
+    name: "zeik",
+  },
+  {
+    name: "xander",
+  },
+  {
+    name: "yeofred",
+  },
+  {
+    name: "tim",
+  },
+  {
+    name: "harold",
+  },
+  {
+    name: "jimbo",
+  },
+  {
+    name: "tereke",
+  },
+];
+
+export const dataToPassQuickSortCoverageDescending = [
+  {
+    name: "zeik",
+  },
+  {
+    name: "yeofred",
+  },
+  {
+    name: "xander",
+  },
+  {
+    name: "tommy",
+  },
+  {
+    name: "tim",
+  },
+  {
+    name: "tereke",
+  },
+  {
+    name: "sally",
+  },
+  {
+    name: "mike",
+  },
+  {
+    name: "kim",
+  },
+  {
+    name: "kate",
+  },
+  {
+    name: "jimbo",
+  },
+  {
+    name: "harold",
+  },
+  {
+    name: "chris",
+  },
+  {
+    name: "betty",
+  },
+  {
+    name: "alyssa",
+  },
+];

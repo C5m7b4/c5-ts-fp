@@ -50,7 +50,6 @@ describe("bubbleSort", () => {
   test("should sort dates descending", () => {
     const result = bubbleSort(dataWithDates, false, "expires", true);
     expect(result).toEqual(dataWithDatesDescending);
-    console.log(result);
   });
   test("should sort numbers that are jumbled up", () => {
     const arr = [5, 2, 4, 1, 3];
