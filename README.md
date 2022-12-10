@@ -29,6 +29,7 @@ here are the functions that I am covering so far
 - [isValid](#isvalid)
 - [date functions](#date-functions)
 - [format functions](#format-functions)
+- [Double Linked List](#double-linked-list)
 
 coming soon
 
@@ -299,3 +300,7 @@ we have formatDate
 ```js
     expect(formatDate("1/1/2020 2:00 PM")).toEqual("1/1/2020");
 ```
+
+### double linked list
+
+this one is still a little interesting to me as this is a new concept. first we start with numbers only, and then we are going to move on to arrays of objects to go full circle. as of now, there is still on line of code that i haven't figured out to test yet. see the tests for examples
