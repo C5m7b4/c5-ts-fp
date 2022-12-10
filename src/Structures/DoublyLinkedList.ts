@@ -19,7 +19,7 @@ export class DoublyLinkedList<T> {
     let curr = this.head;
     let out = "";
     for (let i = 0; curr && i < this.length; i++) {
-      out += `${i} => ${curr.value}, `;
+      out += `${i} => ${JSON.stringify(curr.value)}, `;
       curr = curr.next;
     }
 
