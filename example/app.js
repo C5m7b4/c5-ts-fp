@@ -115,9 +115,11 @@ import { DoubleLinkedList } from "../src";
 
 const list = new DoublyLinkedList();
 
-list.append(5);
-list.append(7);
+list.append({ id: 1, name: "mike" });
+list.append({ id: 2, name: "tommy" });
+list.append({ id: 3, name: "tj" });
+
 list.debug();
 
-list.insertAt(9, 1);
-list.debug();
+const n2 = list.get(2);
+console.log(n2);

@@ -1,5 +1,10 @@
 import { DoublyLinkedList } from "../src";
 
+interface Person {
+  id: number;
+  name: string;
+}
+
 describe("doubleLinkedList", () => {
   test("should show links using only numbers", () => {
     const list = new DoublyLinkedList<number>();
@@ -88,5 +93,16 @@ describe("doubleLinkedList", () => {
     list.append(6);
     list.insertAt(4, 2);
     expect(list.length).toEqual(3);
+  });
+  test("should create lists of objects", () => {
+    const list = new DoublyLinkedList<Person>();
+
+    list.append({ id: 1, name: "mike" });
+    list.append({ id: 2, name: "tommy" });
+    list.append({ id: 3, name: "tj" });
+    list.debug();
+
+    expect(list.length).toEqual(3);
+    expect(list.get(2)).toEqual({ id: 3, name: "tj" });
   });
 });

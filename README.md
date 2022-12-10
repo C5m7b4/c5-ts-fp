@@ -303,4 +303,4 @@ we have formatDate
 
 ### double linked list
 
-this one is still a little interesting to me as this is a new concept. first we start with numbers only, and then we are going to move on to arrays of objects to go full circle. as of now, there is still on line of code that i haven't figured out to test yet. see the tests for examples
+this one is still a little interesting to me as this is a new concept. we have done testing with arrays of objects and no code changes seem to need to be made. this is something I will play with a little more to get  more familiar. There is still one line of code that I have not been able to figure out how to create a test for, so if somebody else can help, feel free.
