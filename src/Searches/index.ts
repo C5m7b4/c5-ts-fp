@@ -3,6 +3,7 @@ import { binarySearch } from "./BinarySearchList";
 import { PreOrderSearch } from "./PreOrderSearch";
 import { InOrderSearch } from "./InOrderSearch";
 import { PostOrderSearch } from "./PostOrderSearch";
+import { BreadthFirstSearch } from "./BreadthFirstSearch";
 
 export {
   linearSearch,
@@ -10,4 +11,5 @@ export {
   PreOrderSearch,
   InOrderSearch,
   PostOrderSearch,
+  BreadthFirstSearch,
 };

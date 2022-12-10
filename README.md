@@ -33,6 +33,7 @@ here are the functions that I am covering so far
 - [Pre Order Search](#pre-order-search)
 - [In Order Search](#in-order-search)
 - [Post Order Search](#post-order-search)
+- Breadth First Search
 
 coming soon
 
@@ -334,3 +335,9 @@ performs tree searching in an in order manner. these are Depth first searches. t
 performs tree searching in a post order manner. these are Depth first searches. these searches use a stack like operation. it looks something like this:
 
 ![alt post-order](images/05-post_order.png)
+
+### Breadth First Search
+
+this search uses a queue and operates on binary trees. it works like this:
+
+![alt bfs](images/06-bfs.png)
