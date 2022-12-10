@@ -319,12 +319,18 @@ There is still one line of code that I have not been able to figure out how to c
 
 ### Pre Order Search
 
-performs tree searching in a pre order manner. these are Depth first searches.
+performs tree searching in a pre order manner. these are Depth first searches. it looks something like this:
+
+![alt pre-order](images/03-pre-order.png)
 
 ### In order Search
 
-performs tree searching in an in order manner. these are Depth first searches.
+performs tree searching in an in order manner. these are Depth first searches. it looks something like this:
+
+![alt in-order](images/04-in-order.png)
 
 ### Post Order Search
 
-performs tree searching in a post order manner. these are Depth first searches.
+performs tree searching in a post order manner. these are Depth first searches. it looks something like this:
+
+![alt post-order](images/05-post_order.png)
