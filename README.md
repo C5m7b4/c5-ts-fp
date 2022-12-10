@@ -303,4 +303,13 @@ we have formatDate
 
 ### double linked list
 
-this one is still a little interesting to me as this is a new concept. we have done testing with arrays of objects and no code changes seem to need to be made. this is something I will play with a little more to get  more familiar. There is still one line of code that I have not been able to figure out how to create a test for, so if somebody else can help, feel free.
+this one is still a little interesting to me as this is a new concept. we have done testing with arrays of objects and no code changes seem to need to be made. this is something I will play with a little more to get  more familiar. 
+
+```diff
+- list.append(5);
++ list.append({ id: 1, name: "mike" });
+```
+
+There is still one line of code that I have not been able to figure out how to create a test for, so if somebody else can help, feel free.
+
+![alt missing-test](images/02-missing-test.png)
