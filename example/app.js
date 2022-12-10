@@ -123,3 +123,50 @@ list.debug();
 
 const n2 = list.get(2);
 console.log(n2);
+
+import { BreadthFirstSearch } from "../src";
+
+const tree = {
+  value: 20,
+  right: {
+    value: 50,
+    right: {
+      value: 100,
+      right: null,
+      left: null,
+    },
+    left: {
+      value: 30,
+      right: {
+        value: 45,
+        right: null,
+        left: null,
+      },
+      left: {
+        value: 29,
+        right: null,
+        left: null,
+      },
+    },
+  },
+  left: {
+    value: 10,
+    right: {
+      value: 15,
+      right: null,
+      left: null,
+    },
+    left: {
+      value: 5,
+      right: {
+        value: 7,
+        right: null,
+        left: null,
+      },
+      left: null,
+    },
+  },
+};
+
+debugger;
+console.log(BreadthFirstSearch(tree, 7));
