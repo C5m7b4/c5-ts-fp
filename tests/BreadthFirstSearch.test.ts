@@ -1,4 +1,4 @@
-import { tree } from "./testtree";
+import { tree } from "./testTree";
 import { BreadthFirstSearch } from "../src";
 
 describe("breadthFirstSearch", () => {
