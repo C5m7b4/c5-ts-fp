@@ -33,7 +33,7 @@ here are the functions that I am covering so far
 - [Pre Order Search](#pre-order-search)
 - [In Order Search](#in-order-search)
 - [Post Order Search](#post-order-search)
-- Breadth First Search
+- [Breadth First Search](#breadth-first-search)
 
 coming soon
 
