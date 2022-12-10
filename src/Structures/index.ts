@@ -1,3 +1,4 @@
+import { DoublyLinkedList } from "./DoublyLinkedList";
 import { RingBuffer } from "./RingBuffer";
 
-export { RingBuffer };
+export { RingBuffer, DoublyLinkedList };

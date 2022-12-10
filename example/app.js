@@ -20,7 +20,7 @@ console.log(curriedAdd(5)(5));
 //   (x) =>
 //     fns.reduce((y, f) => f(y), x);
 
-import { compose } from "../src";
+import { compose, DoublyLinkedList } from "../src";
 
 const addOne = (x) => x.map((y) => y + 1);
 const addTwo = (x) => x.map((y) => y + 2);
@@ -110,3 +110,14 @@ import { QuickSort } from "../src";
 
 // const sortedDates = QuickSort(dataWithDates, true, "expires", true);
 // console.log(sortedDates);
+
+import { DoubleLinkedList } from "../src";
+
+const list = new DoublyLinkedList();
+
+list.append(5);
+list.append(7);
+list.debug();
+
+list.insertAt(9, 1);
+list.debug();
