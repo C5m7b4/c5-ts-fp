@@ -9,3 +9,4 @@ export * from "./Searches";
 export * from "./Sorters";
 export * from "./Structures";
 export * from "./Utils";
+export * from "./types";

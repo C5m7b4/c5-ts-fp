@@ -30,6 +30,9 @@ here are the functions that I am covering so far
 - [date functions](#date-functions)
 - [format functions](#format-functions)
 - [Double Linked List](#double-linked-list)
+- [Pre Order Search](#pre-order-search)
+- [In Order Search](#in-order-search)
+- [Post Order Search](#post-order-search)
 
 coming soon
 
@@ -313,3 +316,15 @@ this one is still a little interesting to me as this is a new concept. we have d
 There is still one line of code that I have not been able to figure out how to create a test for, so if somebody else can help, feel free.
 
 ![alt missing-test](images/02-missing-test.png)
+
+### Pre Order Search
+
+performs tree searching in a pre order manner. these are Depth first searches.
+
+### In order Search
+
+performs tree searching in an in order manner. these are Depth first searches.
+
+### Post Order Search
+
+performs tree searching in a post order manner. these are Depth first searches.

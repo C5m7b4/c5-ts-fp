@@ -14,3 +14,9 @@ export interface IQueue<T> {
 export type primitiveType = string | number | Date | boolean;
 
 export type isValidType = number | string | Date | Object;
+
+export type BinaryNode<T> = {
+  value: T;
+  left: BinaryNode<T> | null;
+  right: BinaryNode<T> | null;
+};
