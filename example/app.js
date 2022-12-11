@@ -116,57 +116,64 @@ import { DoubleLinkedList } from "../src";
 const list = new DoublyLinkedList();
 
 list.append({ id: 1, name: "mike" });
-list.append({ id: 2, name: "tommy" });
+
 list.append({ id: 3, name: "tj" });
+
+list.insertAt({ id: 2, name: "tommy" }, 1);
 
 list.debug();
 
-const n2 = list.get(2);
-console.log(n2);
+// const n2 = list.get(2);
+// console.log(n2);
 
-import { BreadthFirstSearch } from "../src";
+// import { BreadthFirstSearch } from "../src";
 
-const tree = {
-  value: 20,
-  right: {
-    value: 50,
-    right: {
-      value: 100,
-      right: null,
-      left: null,
-    },
-    left: {
-      value: 30,
-      right: {
-        value: 45,
-        right: null,
-        left: null,
-      },
-      left: {
-        value: 29,
-        right: null,
-        left: null,
-      },
-    },
-  },
-  left: {
-    value: 10,
-    right: {
-      value: 15,
-      right: null,
-      left: null,
-    },
-    left: {
-      value: 5,
-      right: {
-        value: 7,
-        right: null,
-        left: null,
-      },
-      left: null,
-    },
-  },
-};
+// const tree = {
+//   value: 20,
+//   right: {
+//     value: 50,
+//     right: {
+//       value: 100,
+//       right: null,
+//       left: null,
+//     },
+//     left: {
+//       value: 30,
+//       right: {
+//         value: 45,
+//         right: null,
+//         left: null,
+//       },
+//       left: {
+//         value: 29,
+//         right: null,
+//         left: null,
+//       },
+//     },
+//   },
+//   left: {
+//     value: 10,
+//     right: {
+//       value: 15,
+//       right: null,
+//       left: null,
+//     },
+//     left: {
+//       value: 5,
+//       right: {
+//         value: 7,
+//         right: null,
+//         left: null,
+//       },
+//       left: null,
+//     },
+//   },
+// };
+
+// console.log(BreadthFirstSearch(tree, 7));
+
+import { tree, tree2 } from "../tests/testTree";
+import { compareBinaryTries } from "../src";
 
 debugger;
-console.log(BreadthFirstSearch(tree, 7));
+console.log(compareBinaryTries(tree, tree2));
