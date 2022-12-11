@@ -104,5 +104,14 @@ describe("doubleLinkedList", () => {
 
     expect(list.length).toEqual(3);
     expect(list.get(2)).toEqual({ id: 3, name: "tj" });
+
+    list.clear();
+
+    list.append({ id: 1, name: "mike" });
+
+    list.append({ id: 3, name: "tj" });
+
+    list.insertAt({ id: 2, name: "tommy" }, 1);
+    expect(list.length).toEqual(3);
   });
 });

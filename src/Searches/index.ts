@@ -4,6 +4,7 @@ import { PreOrderSearch } from "./PreOrderSearch";
 import { InOrderSearch } from "./InOrderSearch";
 import { PostOrderSearch } from "./PostOrderSearch";
 import { BreadthFirstSearch } from "./BreadthFirstSearch";
+import { compareBinaryTries } from "./CompareBinaryTries";
 
 export {
   linearSearch,
@@ -12,4 +13,5 @@ export {
   InOrderSearch,
   PostOrderSearch,
   BreadthFirstSearch,
+  compareBinaryTries,
 };
