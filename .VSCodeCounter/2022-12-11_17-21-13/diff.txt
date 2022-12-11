@@ -1,0 +1,36 @@
+Date : 2022-12-11 17:21:13
+Directory : d:\typescript\learning\c5-ts-fp\src
+Total : 10 files,  188 codes, 21 comments, 54 blanks, all 263 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |         10 |        188 |         21 |         54 |        263 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                               | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                  |         10 |        188 |         21 |         54 |        263 |
+| Searches                                                           |          6 |         88 |         19 |         29 |        136 |
+| Structures                                                         |          2 |         94 |          2 |         24 |        120 |
++--------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                           | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\typescript\learning\c5-ts-fp\src\Searches\BreadthFirstSearch.ts | TypeScript |         20 |          4 |          6 |         30 |
+| d:\typescript\learning\c5-ts-fp\src\Searches\CompareBinaryTries.ts | TypeScript |         16 |          3 |          5 |         24 |
+| d:\typescript\learning\c5-ts-fp\src\Searches\InOrderSearch.ts      | TypeScript |         13 |          4 |          6 |         23 |
+| d:\typescript\learning\c5-ts-fp\src\Searches\PostOrderSearch.ts    | TypeScript |         13 |          4 |          7 |         24 |
+| d:\typescript\learning\c5-ts-fp\src\Searches\PreOrderSearch.ts     | TypeScript |         13 |          4 |          5 |         22 |
+| d:\typescript\learning\c5-ts-fp\src\Searches\index.ts              | TypeScript |         13 |          0 |          0 |         13 |
+| d:\typescript\learning\c5-ts-fp\src\Structures\DoublyLinkedList.ts | TypeScript |         93 |          2 |         24 |        119 |
+| d:\typescript\learning\c5-ts-fp\src\Structures\index.ts            | TypeScript |          1 |          0 |          0 |          1 |
+| d:\typescript\learning\c5-ts-fp\src\index.ts                       | TypeScript |          1 |          0 |          0 |          1 |
+| d:\typescript\learning\c5-ts-fp\src\types.ts                       | TypeScript |          5 |          0 |          1 |          6 |
+| Total                                                              |            |        188 |         21 |         54 |        263 |
++--------------------------------------------------------------------+------------+------------+------------+------------+------------+

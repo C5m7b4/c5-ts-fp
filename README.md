@@ -25,7 +25,7 @@ here are the functions that I am covering so far
 - [Bubble Sort](#bubble-sort)
 - [swap](#swap)
 - [RingBuffer](#ringbuffer)
-- QuickSort
+- [QuickSort](#quick-sort)
 - [isValid](#isvalid)
 - [date functions](#date-functions)
 - [format functions](#format-functions)
@@ -34,6 +34,7 @@ here are the functions that I am covering so far
 - [In Order Search](#in-order-search)
 - [Post Order Search](#post-order-search)
 - [Breadth First Search](#breadth-first-search)
+- [CompareBinaryTries](#compare-binary-tries)
 
 coming soon
 
@@ -238,6 +239,10 @@ type Client = {
     expect(ring).toEqual({ buffer: [{ id: 1, name: "mike" }], size: 5 });
 ```
 
+### Quick Sort
+
+another sorting algorithm that uses a divide and conquer approach
+
 ### isValid
 
 this function will tell you if any number, string, object, or array is actually valid or not
@@ -341,3 +346,7 @@ performs tree searching in a post order manner. these are Depth first searches. 
 this search uses a queue and operates on binary trees. it works like this:
 
 ![alt bfs](images/06-bfs.png)
+
+### Compare Binary Tries
+
+this is a function that will take two trees of data and tell you if they are equal or not
