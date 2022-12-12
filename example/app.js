@@ -175,5 +175,4 @@ list.debug();
 import { tree, tree2 } from "../tests/testTree";
 import { compareBinaryTries } from "../src";
 
-debugger;
 console.log(compareBinaryTries(tree, tree2));
