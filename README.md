@@ -35,6 +35,8 @@ here are the functions that I am covering so far
 - [Post Order Search](#post-order-search)
 - [Breadth First Search](#breadth-first-search)
 - [CompareBinaryTries](#compare-binary-tries)
+- BinarySearchTree
+- Tree
 
 coming soon
 
@@ -350,3 +352,7 @@ this search uses a queue and operates on binary trees. it works like this:
 ### Compare Binary Tries
 
 this is a function that will take two trees of data and tell you if they are equal or not
+
+### Tree
+
+this is a very basic Tree that I'm playing with right. I'll come back to this one later and implement some more functionality, but I would like to create some better trees first
