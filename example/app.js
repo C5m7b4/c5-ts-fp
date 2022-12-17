@@ -106,7 +106,7 @@ export const dataWithDates = [
   },
 ];
 
-import { QuickSort } from "../src";
+// import { QuickSort } from "../src";
 
 // const sortedDates = QuickSort(dataWithDates, true, "expires", true);
 // console.log(sortedDates);
@@ -176,3 +176,41 @@ import { tree, tree2 } from "../tests/testTree";
 import { compareBinaryTries } from "../src";
 
 console.log(compareBinaryTries(tree, tree2));
+
+import { QuickSort } from "../SimpleImplementations/QuickSort";
+
+const qsArr = [6, 3, 1, 7, 2, 5, 4];
+console.log(QuickSort(qsArr));
+
+const nums = [
+  20, 51, 3, 801, 415, 62, 4, 17, 19, 11, 1, 100, 1244, 104, 944, 854, 34, 3000,
+  3001, 1200, 633,
+];
+import { RadixSort } from "../SimpleImplementations/RadixSort";
+
+const radixResult = RadixSort(nums);
+console.log(radixResult);
+
+const fill = 99;
+const nums1 = new Array(fill)
+  // @ts-ignore
+  .fill()
+  .map(() => Math.floor(Math.random() * 500000));
+
+const ans = RadixSort(nums1);
+console.log(ans);
+console.log(nums1.sort());
+
+import { LinkedList } from "../src";
+const llist = new LinkedList();
+llist.delete(0);
+// llist.push(1);
+// llist.find(0);
+// llist.push(2);
+
+// const llistResult = llist.get(1);
+// console.log("result", llistResult);
+// llist.push(3);
+// llist.pop();
+// console.log("length", llist.length);
+// console.log("list", llist);
