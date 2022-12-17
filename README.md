@@ -11,34 +11,34 @@ this is my small functional library for typescript.
 
 here are the functions that I am covering so far
 
-- [curry](#curry)
-- [compose](#compose)
-- [Box](#box)
-- [trace](#trace)
-- [prop](#prop)
 - [append](#append)
-- [Maybe](#maybe)
-- [Stack](#stack)
-- [Queue](#queue)
-- [Linear Search](#linear-search)
-- [Binary Search](#binary-search)
-- [Bubble Sort](#bubble-sort)
-- [swap](#swap)
-- [RingBuffer](#ringbuffer)
-- [QuickSort](#quick-sort)
-- [isValid](#isvalid)
-- [date functions](#date-functions)
-- [format functions](#format-functions)
-- [Double Linked List](#double-linked-list)
-- [Pre Order Search](#pre-order-search)
-- [In Order Search](#in-order-search)
-- [Post Order Search](#post-order-search)
-- [Breadth First Search](#breadth-first-search)
-- [CompareBinaryTries](#compare-binary-tries)
-- BinarySearchTree
-- [Tree](#tree)
 - [ArrayList](#arraylist)
+- [Binary Search](#binary-search)
+- [BinarySearchTree](#binary-search-tree)
+- [Box](#box)
+- [Breadth First Search](#breadth-first-search)
+- [Bubble Sort](#bubble-sort)
+- [CompareBinaryTries](#compare-binary-tries)
+- [compose](#compose)
+- [curry](#curry)
+- [date functions](#date-functions)
+- [Double Linked List](#double-linked-list)
+- [format functions](#format-functions)
+- [In Order Search](#in-order-search)
+- [isValid](#isvalid)
+- [Linear Search](#linear-search)
 - [LinkedList](#singly-linked-list)
+- [Maybe](#maybe)
+- [Post Order Search](#post-order-search)
+- [prop](#prop)
+- [Pre Order Search](#pre-order-search)
+- [RingBuffer](#ringbuffer)
+- [Stack](#stack)
+- [swap](#swap)
+- [trace](#trace)
+- [Tree](#tree)
+- [Queue](#queue)
+- [QuickSort](#quick-sort)
 
 coming soon
 
@@ -372,3 +372,15 @@ a very simple singly linked list. params:
 - find
 - get
 - delete
+
+### Binary Search Tree
+
+methods
+
+- insert
+- search
+- preOrderTraversal
+- inOrderTraversal
+- postOrderTraversal
+
+I think I need to investigate object a little more with this in the testing
