@@ -359,6 +359,16 @@ this is a function that will take two trees of data and tell you if they are equ
 
 this is a very basic Tree that I'm playing with right. I'll come back to this one later and implement some more functionality, but I would like to create some better trees first
 
-## Arraylist
+### Arraylist
 
 this is a pretty simple implementation of arrays but using objects
+
+### Singly Linked List
+
+a very simple singly linked list. params:
+
+- push
+- pop
+- find
+- get
+- delete
