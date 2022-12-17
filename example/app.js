@@ -13,7 +13,7 @@ const curry = (f) => {
 const add = (a, b) => a + b;
 
 const curriedAdd = curry(add);
-console.log(curriedAdd(5)(5));
+// console.log(curriedAdd(5)(5));
 
 // const compose =
 //   (...fns) =>
@@ -28,7 +28,7 @@ const addTwo = (x) => x.map((y) => y + 2);
 const arr = [1, 2, 3, 4, 5, 6];
 
 const r = compose(addOne, addTwo);
-console.log(r(arr));
+// console.log(r(arr));
 
 import { Box, trace } from "../src";
 import { data } from "../tests/data";
@@ -47,7 +47,7 @@ const items = Box(data)
   .map((x) => x.filter((i) => i.price < 3.0))
   .fold((x) => x);
 
-console.log(items);
+// console.log(items);
 
 import { data as data1 } from "./data";
 import { Maybe } from "../src";
@@ -69,7 +69,7 @@ const maybeData = Maybe.just(data1)
   .map((x) => x.map((i) => ({ ...i, price: formatMoney(i.price) })))
   .extract();
 
-console.log(maybeData);
+// console.log(maybeData);
 
 const maybeData1 = Maybe.just(null)
   .map((x) => x.filter((i) => i.dept === 32))
@@ -77,15 +77,15 @@ const maybeData1 = Maybe.just(null)
   .map((x) => x.map((i) => ({ ...i, price: formatMoney(i.price) })))
   .extract();
 
-console.log(maybeData1);
+// console.log(maybeData1);
 
 const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
 import { linearSearch } from "../src";
 const found = linearSearch(arr1, 4);
-console.log("found", found);
+// console.log("found", found);
 
 import { append } from "../src";
-console.log(append("second")("first-"));
+// console.log(append("second")("first-"));
 
 export const dataWithDates = [
   {
@@ -175,12 +175,12 @@ list.debug();
 import { tree, tree2 } from "../tests/testTree";
 import { compareBinaryTries } from "../src";
 
-console.log(compareBinaryTries(tree, tree2));
+// console.log(compareBinaryTries(tree, tree2));
 
 import { QuickSort } from "../SimpleImplementations/QuickSort";
 
 const qsArr = [6, 3, 1, 7, 2, 5, 4];
-console.log(QuickSort(qsArr));
+// console.log(QuickSort(qsArr));
 
 const nums = [
   20, 51, 3, 801, 415, 62, 4, 17, 19, 11, 1, 100, 1244, 104, 944, 854, 34, 3000,
@@ -189,7 +189,7 @@ const nums = [
 import { RadixSort } from "../SimpleImplementations/RadixSort";
 
 const radixResult = RadixSort(nums);
-console.log(radixResult);
+// console.log(radixResult);
 
 const fill = 99;
 const nums1 = new Array(fill)
@@ -197,9 +197,9 @@ const nums1 = new Array(fill)
   .fill()
   .map(() => Math.floor(Math.random() * 500000));
 
-const ans = RadixSort(nums1);
-console.log(ans);
-console.log(nums1.sort());
+// const ans = RadixSort(nums1);
+// console.log(ans);
+// console.log(nums1.sort());
 
 import { LinkedList } from "../src";
 const llist = new LinkedList();
@@ -214,3 +214,31 @@ llist.delete(0);
 // llist.pop();
 // console.log("length", llist.length);
 // console.log("list", llist);
+
+import { BinarySearchTree } from "../src";
+function comparator(a, b) {
+  if (a < b) return -1;
+
+  if (a > b) return 1;
+
+  return 0;
+}
+
+const bst = new BinarySearchTree(comparator);
+
+bst.insert(5);
+
+bst.insert(2);
+bst.insert(3);
+bst.insert(1);
+
+bst.insert(7);
+bst.insert(6);
+bst.insert(8);
+
+console.log("ostorder", bst.postOrderTraversal(bst.head));
+console.log("bst", bst);
+console.log("**************");
+bst.preOrderTraversal(bst.head);
+console.log("**************");
+bst.postOrderTraversal(bst.head);
