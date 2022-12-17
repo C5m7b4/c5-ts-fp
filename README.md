@@ -38,7 +38,7 @@ here are the functions that I am covering so far
 - BinarySearchTree
 - [Tree](#tree)
 - [ArrayList](#arraylist)
-- LinkedList
+- [LinkedList](#singly-linked-list)
 
 coming soon
 
