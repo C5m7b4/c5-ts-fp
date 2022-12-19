@@ -8,5 +8,9 @@ https://www.codingame.com/playgrounds/6272/building-a-maybe-in-javascript
 
 https://www.guru99.com/quicksort-in-javascript.html
 
+https://medium.com/@konduruharish/binary-search-tree-in-typescript-and-c-25fa5107cc5d
+
+https://ricardoborges.dev/data-structures-in-typescript-binary-search-tree
+
 
 

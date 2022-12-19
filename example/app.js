@@ -242,3 +242,16 @@ console.log("**************");
 bst.preOrderTraversal(bst.head);
 console.log("**************");
 bst.postOrderTraversal(bst.head);
+
+import { AVLTree } from "../src";
+
+// const avlNums = [3, 7, 4, 6, 5, 1, 10, 2, 9, 8];
+const avlTree = new AVLTree();
+avlTree.add(4);
+console.log(avlTree.toJson());
+// avlNums.map((n) => avlTree.add(n));
+
+// const treeObj = avlTree.toObject();
+// console.log(treeObj);
+
+// console.log(treeObj.value);
