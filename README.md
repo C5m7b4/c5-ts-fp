@@ -13,6 +13,7 @@ here are the functions that I am covering so far
 
 - [append](#append)
 - [ArrayList](#arraylist)
+- [AVL Tree](#avl-trees)
 - [Binary Search](#binary-search)
 - [BinarySearchTree](#binary-search-tree)
 - [Box](#box)
@@ -384,3 +385,7 @@ methods
 - postOrderTraversal
 
 I think I need to investigate object a little more with this in the testing
+
+### AVL Trees
+
+An AVL tree is a self balancinhg Binary Search Tree. Not all BST's are AVL trees. You will probably never use these in production but they are good for pratice.
