@@ -25,5 +25,6 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": 0,
     "@typescript-eslint/ban-types": 0,
     "preferred-spread": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
   },
 };

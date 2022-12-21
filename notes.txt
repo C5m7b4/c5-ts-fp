@@ -14,3 +14,5 @@ https://ricardoborges.dev/data-structures-in-typescript-binary-search-tree
 
 
 
+https://www.google.com/search?q=javascript+%2B+tree+visualizer&rlz=1C1RXQR_enUS953US953&oq=javascript+%2B+tree+visualizer&aqs=chrome..69i57j0i22i30j0i10i22i30.7160j0j9&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f5818272,vid:d-8f3w6qbDs
+
