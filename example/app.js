@@ -255,3 +255,29 @@ console.log(avlTree.toJson());
 // console.log(treeObj);
 
 // console.log(treeObj.value);
+
+import {
+  BinarySearchTreeNode,
+  drawBinaryTree,
+  VisualizationType,
+} from "../src";
+
+// const root = new BinaryTreeNode(100);
+// const left = new BinaryTreeNode(50);
+// const right = new BinaryTreeNode(50);
+// const rightOfLeft = new BinaryTreeNode(75);
+// root.setLeft(left);
+// root.setRight(right);
+// root.left.setRight(rightOfLeft);
+
+const root = new BinarySearchTreeNode(100);
+// root.insert(50);
+// root.insert(75);
+// root.insert(125);
+
+[50, 145, 150, 130, 120, 140, 30, 70, 75].forEach((num) => root.insert(num));
+
+drawBinaryTree(root, document.querySelector("canvas"), {
+  type: VisualizationType.PRETTY,
+});
+console.log("root", root);

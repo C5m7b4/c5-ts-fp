@@ -1,4 +1,4 @@
-export class BinarySearchTreeNode<T> {
+class BinarySearchTreeNode<T> {
   data: T;
   left?: BinarySearchTreeNode<T>;
   right?: BinarySearchTreeNode<T>;
