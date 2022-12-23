@@ -278,6 +278,14 @@ const root = new BinarySearchTreeNode(100);
 [50, 145, 150, 130, 120, 140, 30, 70, 75].forEach((num) => root.insert(num));
 
 drawBinaryTree(root, document.querySelector("canvas"), {
-  type: VisualizationType.PRETTY,
+  type: VisualizationType.SIMPLE,
 });
 console.log("root", root);
+
+import { AdjacencyGraph } from "../src";
+
+const graph = new AdjacencyGraph("id");
+const node1 = { id: 1 };
+const node2 = { id: 2 };
+graph.addEdge(node1, node2);
+console.log(graph);

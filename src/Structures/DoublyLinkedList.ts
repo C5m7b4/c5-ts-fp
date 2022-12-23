@@ -1,13 +1,13 @@
-type Node<T> = {
+export type DoublyLinkedListNode<T> = {
   value: T;
-  prev?: Node<T>;
-  next?: Node<T>;
+  prev?: DoublyLinkedListNode<T>;
+  next?: DoublyLinkedListNode<T>;
 };
 
 export class DoublyLinkedList<T> {
   public length: number;
-  public head?: Node<T>;
-  public tail?: Node<T>;
+  public head?: DoublyLinkedListNode<T>;
+  public tail?: DoublyLinkedListNode<T>;
 
   constructor() {
     this.length = 0;
@@ -27,7 +27,7 @@ export class DoublyLinkedList<T> {
   }
 
   prepend(item: T): void {
-    const node = { value: item } as Node<T>;
+    const node = { value: item } as DoublyLinkedListNode<T>;
 
     this.length++;
 
@@ -58,8 +58,8 @@ export class DoublyLinkedList<T> {
     }
 
     this.length++;
-    const curr = this.getAt(idx) as Node<T>;
-    const node = { value: item } as Node<T>;
+    const curr = this.getAt(idx) as DoublyLinkedListNode<T>;
+    const node = { value: item } as DoublyLinkedListNode<T>;
 
     node.next = curr;
     node.prev = curr.prev;
@@ -71,7 +71,7 @@ export class DoublyLinkedList<T> {
 
   append(item: T): void {
     this.length++;
-    const node = { value: item } as Node<T>;
+    const node = { value: item } as DoublyLinkedListNode<T>;
 
     if (!this.tail) {
       this.head = this.tail = node;
@@ -117,7 +117,7 @@ export class DoublyLinkedList<T> {
     return this.removeNode(node);
   }
 
-  private removeNode(node: Node<T>): T | undefined {
+  private removeNode(node: DoublyLinkedListNode<T>): T | undefined {
     this.length--;
 
     if (this.length === 0) {
@@ -145,7 +145,7 @@ export class DoublyLinkedList<T> {
     return node?.value;
   }
 
-  private getAt(idx: number): Node<T> | undefined {
+  private getAt(idx: number): DoublyLinkedListNode<T> | undefined {
     let curr = this.head;
     for (let i = 0; curr && i < idx; ++i) {
       curr = curr.next;

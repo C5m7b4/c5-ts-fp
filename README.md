@@ -38,6 +38,7 @@ here are the functions that I am covering so far
 - [swap](#swap)
 - [trace](#trace)
 - [Tree](#tree)
+- Tree Visualizer
 - [Queue](#queue)
 - [QuickSort](#quick-sort)
 
@@ -389,3 +390,13 @@ I think I need to investigate object a little more with this in the testing
 ### AVL Trees
 
 An AVL tree is a self balancinhg Binary Search Tree. Not all BST's are AVL trees. You will probably never use these in production but they are good for pratice.
+
+### Tree Visualizer
+
+This utiltity will allow you to actually see what your trees look like
+
+#### ToDos
+
+- make tree visualizer support objects
+- add more tests to tree visualizer
+- make AVL Trees support objects
