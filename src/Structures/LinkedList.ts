@@ -1,12 +1,12 @@
-type SingleNode<T> = {
+export type SinglyLinkedNode<T> = {
   value: T;
-  next: SingleNode<T>;
+  next: SinglyLinkedNode<T>;
 };
 
 export class LinkedList<T> {
   public length: number;
-  private head?: SingleNode<T>;
-  private tail?: SingleNode<T>;
+  private head?: SinglyLinkedNode<T>;
+  private tail?: SinglyLinkedNode<T>;
 
   constructor() {
     this.length = 0;
@@ -15,7 +15,7 @@ export class LinkedList<T> {
   }
 
   push(v: T) {
-    const node = { value: v } as SingleNode<T>;
+    const node = { value: v } as SinglyLinkedNode<T>;
     this.length++;
     if (!this.head) {
       this.head = node;
@@ -32,7 +32,7 @@ export class LinkedList<T> {
     return this.delete(this.length - 1);
   }
 
-  find(idx: number): SingleNode<T> | null | undefined {
+  find(idx: number): SinglyLinkedNode<T> | null | undefined {
     if (idx >= this.length) return null;
 
     let curr = this.head;
