@@ -8,6 +8,7 @@ import drawPrettyBinaryTree from "../../../src/Trees/BinaryTreeVisualizer/canvas
 import { VisualizationType } from "../../../src/Trees/BinaryTreeVisualizer/enums/VisualizationType";
 import drawExpandableBinaryTree from "../../../src/Trees/BinaryTreeVisualizer/canvas/drawExpandableBinaryTree";
 
+// make one change to get build to work
 jest.mock(
   "../../../src/Trees/BinaryTreeVisualizer/canvas/drawSimpleBinaryTree"
 );
