@@ -12,6 +12,7 @@ this is my small functional library for typescript.
 here are the functions that I am covering so far
 
 - [append](#append)
+- [Adjacency Graph](#adjacency-graph)
 - [ArrayList](#arraylist)
 - [AVL Tree](#avl-trees)
 - [Binary Search](#binary-search)
@@ -400,3 +401,7 @@ This utiltity will allow you to actually see what your trees look like
 - make tree visualizer support objects
 - add more tests to tree visualizer
 - make AVL Trees support objects
+
+### Adjacency Graph
+
+Graph to link connections between objects. supports depthFirstTraversal and breadthFirstTraversal

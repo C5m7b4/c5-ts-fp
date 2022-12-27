@@ -5,7 +5,7 @@
 import connectPointsWithBezierCurve from "../../../src/Trees/BinaryTreeVisualizer/utils/connectPointsWithBezierCurve";
 import drawPrettyBinaryTree from "../../../src/Trees/BinaryTreeVisualizer/canvas/drawPrettyBinaryTree";
 import BinaryTreeNode from "../../../src/Trees/BinaryTreeVisualizer/tree/BinaryTreeNode";
-import CanvasComponent from "../../../src/Trees/BinaryTreeVisualizer/canvas/canvas";
+import CanvasComponent from "../../../src/Trees/BinaryTreeVisualizer/canvas/Canvas";
 
 jest.mock(
   "../../../src/Trees/BinaryTreeVisualizer/utils/connectPointsWithBezierCurve"
