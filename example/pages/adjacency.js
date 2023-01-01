@@ -27,7 +27,7 @@ console.log(graph);
 
 const dfs = graph.depthFirstTraversal(1, console.log);
 console.log("dfs", dfs);
-const bfs = graph.depthFirstTraversal(1, console.log);
+const bfs = graph.breadthFirstTraversal(1, console.log);
 console.log("bfs", bfs);
 
 // 1: [2,5]

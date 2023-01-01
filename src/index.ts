@@ -7,6 +7,8 @@ import {
   BinaryTreeNode,
 } from "./Trees/BinaryTreeVisualizer";
 
+import { PubSub } from "./patterns";
+
 export { Box } from "./Box";
 export { compose } from "./compose";
 export { curry } from "./curry";
@@ -27,4 +29,5 @@ export {
   BinarySearchTreeNode,
   VisualizationType,
   BinaryTreeNode,
+  PubSub,
 };

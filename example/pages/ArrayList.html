@@ -36,6 +36,7 @@
         <i class='bx bx-menu menu-icon'></i>
         <span class="logo-name">C5 FP-TS</span>
       </div>
+      <div class="sidebar-content">
       <ul class="lists">
         <li class="list">
           <a href="/" class="nav-link">
@@ -73,36 +74,36 @@
             <span class="link">Binary Search</span>
           </a>
         </li> -->
-        <!-- <li class="list">
+        <li class="list">
           <a href="BinarySearchTree.html" class="nav-link">
             <i class='bx bx-home icon'></i>
             <span class="link">Binary Search Tree</span>
           </a>
-        </li> -->
+        </li>
         <li class="list">
           <a href="Box.html" class="nav-link">
             <i class='bx bx-home icon'></i>
             <span class="link">Box</span>
           </a>
         </li>
-        <!--<li class="list">
+        <!-- <li class="list">
           <a href="BreathFirstSearch.html" class="nav-link">
             <i class='bx bx-home icon'></i>
             <span class="link">Breadth First Search</span>
           </a>
-        </li>
-        <li class="list">
+        </li> -->
+        <!-- <li class="list">
           <a href="BubbleSort.html" class="nav-link">
             <i class='bx bx-home icon'></i>
             <span class="link">Bubble Sort</span>
           </a>
-        </li>
-        <li class="list">
+        </li> -->
+        <!-- <li class="list">
           <a href="CompareBinaryTrees.html" class="nav-link">
             <i class='bx bx-home icon'></i>
             <span class="link">Compare Binary Trees</span>
           </a>
-        </li>
+        </li> -->
         <li class="list">
           <a href="Compose.html" class="nav-link">
             <i class='bx bx-home icon'></i>
@@ -115,7 +116,7 @@
             <span class="link">Curry</span>
           </a>
         </li>
-        <li class="list">
+        <!--<li class="list">
           <a href="DateFunctions.html" class="nav-link">
             <i class='bx bx-home icon'></i>
             <span class="link">Date Functions</span>
@@ -231,26 +232,137 @@
         </li> -->
       </ul>
       </div>
+      </div>
     </div>
   </nav>
 
   <section class="overlay"></section>
   <div class="wrapper" style="color: white;">
-    <h2>Arraylist</h2>
+    <h2>ArrayList</h2>
     <hr />
     <div class="main-image">
-      <img src="../images/avl.jpg" alt="append code" height="500" />
+      <img src="../images/arraylist.jpg" alt="append code" height="500" />
     </div>
-    <!-- <div class="section">This is a small library that will demonstrate some Functional aspects
-      of TypeScript as well as some algorithms to help you in your coding 
-      journey.
-    </div> -->
-    <div class="section">An AVL Tree is a self balancing Tree
+
+
+    <div class="section">This is very similar to the Array that you are normally used to in JavaScript. This is a little different
+      take though. Here are the available methods which we can expound upon in the future. And we will.
     </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-bottom"><td>push</td><td>Add an element to the Array</td></tr>
+        <tr class="border-bottom"><td>pop</td><td>Remove the last element of the array</td></tr>
+        <tr class="border-bottom"><td>get</td><td>Get an element at a given position in the array</td></tr>
+        <tr class="border-bottom"><td>delete</td><td>Remove and element at a given position in the array</td></tr>
+        <tr class="border-bottom"><td>_collapseTo</td><td>Internal function use to collapse all remaining items down in position by 1</td></tr>
+      </tbody>
+    </table>
+    <div class="main-box">
+      <pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Copy me"
+      data-prismjs-copy-success="I've been copied!">
+        import { ArrayList } from "../../src";
+
+        const al = new ArrayList();
+        al.push({ id: 1, name: "mike" });
+        al.push({ id: 2, name: "tommy" });
+        al.push({ id: 3, name: "tj" });
+        al.push({ id: 4, name: "ben" });
+        al.push({ id: 5, name: "jimmy" });
+        
+        console.log(al);
+    </code></pre>
+    </div>
+
+    <div class="section">
+      Let's break this one down a little bit. We have pushed 4 people onto our array. It looks like this:
+    </div>
+
+    <div class="centered">
+      <img src="../images/arraylist-01.png" alt="arraylist" />
+    </div>
+
+    <div class="section">Now if we try and get someone at position 2, it is going to look like this:</div>
+
+    <div class="main-box">
+      <pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Copy me"
+      data-prismjs-copy-success="I've been copied!">
+        console.log(al.get(2))
+    </code></pre>
+    </div>
+
+    <div class="centered">
+      <img src="../images/arraylist-02.png" alt="arraylist" />
+    </div>
+
+    <div class="section">Notice that it is actually the record with id 3. That is becuase this is a zero indexed array. Now here
+      is what our array looks like it we run the pop method on the array.
+    </div>
+
+    <div class="main-box">
+      <pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Copy me"
+      data-prismjs-copy-success="I've been copied!">
+        al.pop();
+        console.log(al);
+    </code></pre>
+    </div>
+
+    <div class="centered">
+      <img src="../images/arraylist-03.png" alt="arraylist" />
+    </div>
+
+    <div class="section">Notice that jimmy, who was the last element is now gone. Now we will delete array id of two and see what that looks like.</div>
+
+    <div class="main-box">
+      <pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Copy me"
+      data-prismjs-copy-success="I've been copied!">
+        al.delete(2);
+        console.log(al);
+    </code></pre>
+    </div>
+
+    <div class="centered">
+      <img src="../images/arraylist-04.png" alt="arraylist" />
+    </div>
+
+    <div class="section">Notice that tj is now gone. Here is the complete source code for this page.</div>
+
     
+    <div class="main-box">
+      <pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Copy me"
+      data-prismjs-copy-success="I've been copied!">
+        import { ArrayList } from "../../src";
 
-  
+        const al = new ArrayList();
+        al.push({ id: 1, name: "mike" });
+        al.push({ id: 2, name: "tommy" });
+        al.push({ id: 3, name: "tj" });
+        al.push({ id: 4, name: "ben" });
+        al.push({ id: 5, name: "jimmy" });
+        
+        console.log(al);
+        
+        console.log(al.get(2));
+        
+        al.pop();
+        console.log(al);
+        
+        al.delete(2);
+        console.log(al);
+      
+    </code></pre>
+    </div>
 
+
+    <div class="section">If you take a look at your developer tools, there
+      should be a corresponding js file with the code example provided called arraylist.js.
+    </div>
     <div class="footer">
       <span>&copy; 2022 c5m7b4. all rights reserved.</span>
     </div>
@@ -259,6 +371,7 @@
   
     <script src="../app.js"></script>
     <script src="../prism.js"></script>
+    <script src="arraylist.js"></script>
     
 </body>
 </html>
