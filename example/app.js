@@ -303,3 +303,28 @@ import { AVLTree } from "../src";
 // const node2 = { id: 2 };
 // graph.addEdge(node1, node2);
 // console.log(graph);
+
+import { PubSub } from "../src";
+
+const pubsub = PubSub();
+// const unsub = pubsub.subscribe(console.log);
+// pubsub.publish("hello");
+// pubsub.publish("whatever");
+// unsub();
+// pubsub.publish("goodbye");
+
+let response = "";
+const getMessage = (msg) => {
+  response = msg;
+};
+
+let result = null;
+
+const unSubscribe = pubsub.subscribe(getMessage);
+// result = pubsub.publish(console.log("hello"));
+pubsub.publish("hello");
+
+console.log("msg", response);
+
+unSubscribe();
+pubsub.publish("you should not see this");
